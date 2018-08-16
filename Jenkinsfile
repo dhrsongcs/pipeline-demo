@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Deploy OTK Container 1') {
+    stage('Deploy OTK Container Stage') {
       parallel {
         stage('Deploy OTK Container 1') {
           steps {
@@ -20,7 +20,7 @@ pipeline {
         }
       }
     }
-    stage('Fitnesse Smoke Tests') {
+    stage('Fitnesse Test Stage') {
       parallel {
         stage('Fitnesse Smoke Tests') {
           steps {
